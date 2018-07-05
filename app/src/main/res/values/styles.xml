@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!--沉浸式主题-->
+    <style name="AppTheme.StatusTranslate" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--状态栏透明并且最外层布局顶格，除非使用android:fitsystem="true"-->
+        <item name="android:windowTranslucentStatus" tools:ignore="NewApi">true</item>
+    </style>
+
+    <!--SkidRightLayoutManager-->
+    <style name="AppTheme.Skid_1" parent="AppTheme.StatusTranslate">
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap" tools:targetApi="lollipop">false</item>
+        <item name="android:windowAllowEnterTransitionOverlap" tools:targetApi="lollipop">false</item>
+
+    </style>
+</resources>
